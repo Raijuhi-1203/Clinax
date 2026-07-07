@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Clinax"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="codesgesture.app.clinax.LoginPage" />
+        <activity android:name="codesgesture.app.clinax.PageRegister" />
+        <activity android:name="codesgesture.app.clinax.Dashboard" />
+        <activity android:name="codesgesture.app.clinax.DoctorProfile" />
+        <activity android:name="codesgesture.app.clinax.ConsultActivity" />
+        <activity android:name="codesgesture.app.clinax.ActivityHealthProblem" />
+        <activity android:name="codesgesture.app.clinax.AppoinmentBooked" />
+        <activity android:name="codesgesture.app.clinax.BookAppoinment" />
+        <activity android:name="codesgesture.app.clinax.ActivityAllHPDoctors" />
+        <activity android:name="codesgesture.app.clinax.PageRefund" />
+        <activity android:name="codesgesture.app.clinax.PagePrivacy" />
+        <activity android:name="codesgesture.app.clinax.PageTerm" />
+        <activity android:name="codesgesture.app.clinax.PageDeveloper" />
+        <activity android:name="codesgesture.app.clinax.PageContact" />
+        <activity android:name="codesgesture.app.clinax.PageMyAppoinments" />
+        <activity android:name="codesgesture.app.clinax.ActivityAllSDoctors" />
+        <activity android:name="codesgesture.app.clinax.PageDoctors" />
+        <activity android:name="codesgesture.app.clinax.PageHealthProblems" />
+        <activity android:name="codesgesture.app.clinax.FeedBackForm" />
+    </application>
+
+</manifest>
