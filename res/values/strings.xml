@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Clinax</string>
+    <string name="navigation_drawer_open">open\n</string>
+    <string name="navigation_drawer_close">close</string>
+
+    <string name="batch">batch</string>
+    <string name="con">https://clinax.codiee.co.in/AppWebService.asmx</string>
+    <string name="maincon">https://clinax.adwordbee.com/auth/</string>
+</resources>

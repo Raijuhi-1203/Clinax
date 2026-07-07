@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".PageDeveloper"
+        android:orientation="vertical">
+
+        <include layout="@layout/header"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:src="@drawable/clogo" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/bt_addcart">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:fontFamily="@font/custom_font"
+                                android:text="Let's build great things together. Brief us \n your requirements, and let's connect."
+                                android:textAlignment="center"
+                                android:textSize="14dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:fontFamily="@font/custom_font"
+                                    android:text="Call Us:"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:fontFamily="@font/custom_font"
+                                    android:text="9628092950 962809251"
+                                    android:textAlignment="textStart"
+                                    android:textColor="@color/theme_1"
+                                    android:textSize="14dp" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/custom_font"
+                                android:text="Mon-Sat 10:00 AM-06:00 PM"
+                                android:textAlignment="center"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="2dp"
+                                android:fontFamily="@font/custom_font"
+                                android:text="Sunday 12:00 AM-04:00 PM"
+                                android:textAlignment="center"
+                                android:textSize="14dp" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="8dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/custom_font"
+                                    android:text="Email:"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/custom_font"
+                                    android:text="info@codesgesture.com"
+                                    android:textAlignment="textStart"
+                                    android:textColor="@color/theme_1"
+                                    android:textSize="14dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/custom_font"
+                                    android:text="Website:"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/custom_font"
+                                    android:text="CodesGesture.com"
+                                    android:textAlignment="textStart"
+                                    android:textColor="@color/theme_1"
+                                    android:textSize="14dp" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/custom_font"
+                                android:text="Our Office"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/custom_font"
+                                android:text="First Floor, Thakur Complex\nAlhadadpur Road, Near Shiv Mandir\nBetiahata Gorakhpur, Utter Pradesh\n273001"
+                                android:textAlignment="center"
+                                android:textSize="14dp" />
+
+                        </LinearLayout>
+
+                    </androidx.core.widget.NestedScrollView>
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

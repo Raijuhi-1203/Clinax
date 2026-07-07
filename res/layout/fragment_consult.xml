@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/getinstantconsultbt"
+    android:orientation="vertical">
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+          <androidx.core.widget.NestedScrollView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_above="@+id/bt_addcart">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@color/white"
+                   android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                         <TextView
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_marginLeft="5dp"
+                             android:fontFamily="@font/custom_font"
+                             android:textSize="16dp"
+                             android:textStyle="bold"
+                             android:layout_marginTop="10dp"
+                             android:text="Most Searched Speciality"
+                             android:textColor="@color/black" />
+
+                         <androidx.recyclerview.widget.RecyclerView
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:id="@+id/rvspeciality"
+                             android:layout_margin="5dp" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/bt_consult_healthprblm"
+                        android:textStyle="bold"
+                        android:text="View More"
+                        android:textAlignment="center"
+                        android:textSize="14dp"
+                        android:textAllCaps="false"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:fontFamily="@font/custom_font"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/white"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/blue_borderbt"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                         <TextView
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_marginLeft="10dp"
+                             android:layout_marginTop="10dp"
+                             android:fontFamily="@font/custom_font"
+                             android:textSize="16dp"
+                             android:textStyle="bold"
+                             android:text="Common Health Problems"
+                             android:textColor="@color/black" />
+
+                         <TextView
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_marginLeft="10dp"
+                             android:layout_marginTop="0dp"
+                             android:textSize="14dp"
+                             android:fontFamily="@font/custom_font"
+                             android:layout_marginBottom="3dp"
+                             android:text=" consult online for health problem"
+                             android:textColor="@color/black" />
+
+                         <androidx.recyclerview.widget.RecyclerView
+                             android:orientation="vertical"
+                             android:scrollbars="vertical"
+                             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                             android:id="@+id/rvproblem"
+                             android:layout_marginTop="5dp"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/blue_borderbt"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:id="@+id/bt_view_spcilist"
+                        android:textAllCaps="false"
+                        android:text="Explore More"
+                        android:fontFamily="@font/custom_font"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+               </LinearLayout>
+
+          </androidx.core.widget.NestedScrollView>
+          </LinearLayout>
+     </RelativeLayout>
+</LinearLayout>

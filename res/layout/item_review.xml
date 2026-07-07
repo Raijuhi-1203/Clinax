@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:background="@drawable/spnrbox"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txnm"
+        android:textSize="14dp"
+        android:layout_margin="3dp"
+        android:fontFamily="@font/custom_font"
+        android:textStyle="bold"
+        android:textColor="@color/theme_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RatingBar
+       android:id="@+id/ratingBar"
+        android:stepSize="1"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:isIndicator="true"
+        android:layout_margin="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:fontFamily="@font/custom_font"
+        android:layout_margin="3dp"
+        android:id="@+id/txreview"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

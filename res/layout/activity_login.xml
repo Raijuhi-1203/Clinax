@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="130dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/halfround"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:background="@drawable/white_round"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/logo"
+            android:layout_marginBottom="35dp"
+            android:layout_marginTop="0dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/spnrbox"
+            android:textColor="@color/black"
+            android:fontFamily="@font/custom_font"
+            android:id="@+id/mobileno"
+            android:inputType="number"
+            android:hint="Enter Mobile no"
+            android:drawablePadding="8dp"
+            android:padding="5dp"
+            android:drawableTint="@color/black"
+            android:drawableStart="@drawable/baseline_call_24"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/spnrbox"
+            android:textColor="@color/black"
+            android:fontFamily="@font/custom_font"
+            android:id="@+id/pass"
+            android:inputType="textPassword"
+            android:hint="Enter password"
+            android:drawablePadding="8dp"
+            android:padding="5dp"
+            android:drawableTint="@color/black"
+            android:drawableStart="@drawable/baseline_lock_24"
+            />
+
+        <Button
+            android:layout_width="100dp"
+            android:text="Login"
+            android:id="@+id/btsave"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="@font/custom_font"
+            android:background="@drawable/bluebt" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Don't have a account ? Register"
+            android:id="@+id/btregister"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/custom_font" />
+
+    </LinearLayout>
+</LinearLayout>

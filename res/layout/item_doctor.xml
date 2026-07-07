@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/light_grey_bk"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img"
+            android:src="@drawable/doctor"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:padding="17dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/round_white_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="16dp"
+                android:fontFamily="@font/custom_font"
+                android:id="@+id/txnm"
+                android:textAlignment="textStart"
+                android:textColor="@color/theme_1"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="14dp"
+                android:fontFamily="@font/custom_font"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:id="@+id/qualification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="3dp"
+                android:textSize="14dp"
+                android:fontFamily="@font/custom_font"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:id="@+id/speciality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_margin="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/like"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+
+                <TextView
+                    android:text="100 %"
+                    android:fontFamily="@font/custom_font"
+                    android:layout_gravity="center"
+                    android:textColor="@color/appoinmentbutton"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:src="@drawable/edit"
+                    android:layout_width="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="20dp"/>
+
+                <TextView
+                    android:text="Feedback (5)"
+                    android:id="@+id/feedback"
+                    android:fontFamily="@font/custom_font"
+                    android:layout_gravity="center"
+                    android:textColor="@color/appoinmentbutton"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:text="Available at"
+        android:fontFamily="@font/custom_font"
+        android:layout_gravity="center"
+        android:textColor="@color/followupbt"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:background="@color/getinstantconsultbt"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="16dp"
+        android:fontFamily="@font/custom_font"
+        android:textAlignment="textStart"
+        android:textColor="@color/textblue"
+        android:id="@+id/hospitalnm"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_margin="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/rupee"
+            android:layout_marginLeft="10dp"
+            android:layout_width="10dp"
+            android:layout_gravity="center"
+            android:layout_height="10dp"/>
+
+        <TextView
+            android:text="0.00"
+            android:id="@+id/fee"
+            android:fontFamily="@font/custom_font"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Consultation Fees"
+            android:fontFamily="@font/custom_font"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="0dp"
+        android:text="NEXT AVAILABLE AT"
+        android:fontFamily="@font/custom_font"
+        android:layout_gravity="center"
+        android:textSize="12dp"
+        android:textColor="@color/appoinmentbutton"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageView
+            android:src="@drawable/calendar1"
+            android:layout_marginLeft="10dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:id="@+id/txavlble"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="0dp"
+            android:layout_weight="1.1"
+            android:fontFamily="@font/custom_font"
+            android:gravity="center"
+            android:textAlignment="textStart" />
+
+        <ImageView
+            android:src="@drawable/clock"
+            android:layout_marginLeft="0dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:id="@+id/txschedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="0.9"
+            android:gravity="center"
+            android:fontFamily="@font/custom_font"
+            android:textAlignment="textStart"
+            android:textColor="@color/followupbt" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btbook"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="start"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/custom_font"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/bluebt"
+        android:gravity="center"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:text="Book Appointment"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

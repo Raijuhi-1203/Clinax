@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include layout="@layout/header"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/custom_font"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:id="@+id/heading"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/descp"
+        android:fontFamily="@font/custom_font"
+        android:textAlignment="textStart"
+        android:textSize="14dp" />
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:background="@color/getinstantconsultbt"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/custom_font"
+        android:id="@+id/feedhead"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btfeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="start"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/custom_font"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/bluebt"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:text="Give Your Feedback"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/custom_font"
+        android:text="All feedback"
+        android:textAlignment="textStart"
+        android:textColor="@color/red"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:id="@+id/rvfeedback"
+            android:scrollbars="horizontal" />
+
+</LinearLayout>
+</LinearLayout>

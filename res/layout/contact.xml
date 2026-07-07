@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".Activities.PageContact"
+        android:orientation="vertical">
+
+        <include layout="@layout/header"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/bt_addcart">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:src="@drawable/telephone"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"/>
+
+                            <TextView
+                                android:fontFamily="@font/custom_font"
+                                android:textAlignment="center"
+                                android:textSize="16dp"
+                                android:textColor="@color/black"
+                                android:text="We are help to you!"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:fontFamily="@font/custom_font"
+                                android:textAlignment="center"
+                                android:textSize="14dp"
+                                android:layout_marginTop="8dp"
+                                android:textColor="@color/black"
+                                android:text="Facing an issue? Have any feedback?\nJust call us at my number or drop us message\non Whatsapp, and we will revert back \nas soon as possible."
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <LinearLayout
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_marginTop="8dp"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/custom_font"
+                                    android:textAlignment="center"
+                                    android:layout_margin="5dp"
+                                    android:text="Email:"
+                                    android:textStyle="bold"
+                                    android:textSize="16dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                                <TextView
+                                    android:textSize="16dp"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/custom_font"
+                                    android:textAlignment="textStart"
+                                    android:layout_margin="5dp"
+                                    android:text="info@ekamdhenu.com"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_marginTop="0dp"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/custom_font"
+                                    android:textAlignment="center"
+                                    android:layout_margin="5dp"
+                                    android:text="Mobile:"
+                                    android:textStyle="bold"
+                                    android:textSize="16dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                                <TextView
+                                    android:textSize="16dp"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/custom_font"
+                                    android:textAlignment="textStart"
+                                    android:layout_margin="5dp"
+                                    android:text="+91-9628XXXXXX"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_marginTop="8dp"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <Button
+                                    android:id="@+id/btncall"
+                                    android:textColor="@color/white"
+                                    android:fontFamily="@font/custom_font"
+                                    android:textAlignment="center"
+                                    android:layout_margin="5dp"
+                                    android:text="CALL NOW"
+                                    android:background="@drawable/bluebt"
+                                    android:textStyle="bold"
+                                    android:textSize="14dp"
+                                    android:layout_width="120dp"
+                                    android:layout_height="40dp"/>
+
+                                <Button
+                                    android:id="@+id/btnwhtsapp"
+                                    android:textSize="14dp"
+                                    android:background="@drawable/blue_borderbt"
+                                    android:textColor="@color/white"
+                                    android:fontFamily="@font/custom_font"
+                                    android:textAlignment="center"
+                                    android:layout_margin="5dp"
+                                    android:text="WHATSAPP"
+                                    android:layout_width="120dp"
+                                    android:layout_height="40dp"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+				   </androidx.core.widget.NestedScrollView>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

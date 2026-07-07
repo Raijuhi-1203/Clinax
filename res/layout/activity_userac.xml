@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/view_layout"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:text="Name"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/custom_font"
+                android:textColor="@color/black"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start" />
+
+            <TextView
+                android:text="User Name"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/getinstantconsultbt"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:text="Contact No."
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/custom_font"
+                android:textColor="@color/black"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start" />
+
+            <TextView
+                android:text="9876543210"
+                android:id="@+id/mobile"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/getinstantconsultbt"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:text="Email ID"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/custom_font"
+                android:textColor="@color/black"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start" />
+
+            <TextView
+                android:text="N/A"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:id="@+id/mail"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/getinstantconsultbt"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:text="Gender"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/custom_font"
+                android:textColor="@color/black"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start" />
+
+            <TextView
+                android:text="N/A"
+                android:id="@+id/genders"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/getinstantconsultbt"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:text="State"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/custom_font"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start" />
+
+            <TextView
+                android:text="N/A"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/states"
+                android:gravity="end" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/getinstantconsultbt"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:text="City"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/custom_font"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start" />
+
+            <TextView
+                android:text="N/A"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/citys"
+                android:gravity="end" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/getinstantconsultbt"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:text="Address"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/custom_font"
+                android:textColor="@color/black"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start" />
+
+            <TextView
+                android:text="N/A"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:id="@+id/adds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/getinstantconsultbt"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:text="Age"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/custom_font"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start" />
+
+            <TextView
+                android:text="N/A"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ages"
+                android:gravity="end" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/getinstantconsultbt"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:text="Father's name"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/custom_font"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start" />
+
+            <TextView
+                android:text="N/A"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fathers"
+                android:gravity="end" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/getinstantconsultbt"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:text="Mother's name"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/custom_font"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start" />
+
+            <TextView
+                android:text="N/A"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mothers"
+                android:gravity="end" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/getinstantconsultbt"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:text="Husband name"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/custom_font"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start" />
+
+            <TextView
+                android:text="N/A"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/husbands"
+                android:gravity="end" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/getinstantconsultbt"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp">
+
+        <ScrollView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/edit_layout"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="  Patient Name"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:textAlignment="textStart"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:fontFamily="@font/custom_font"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:maxLines="1"
+                        android:inputType="text"
+                        android:id="@+id/ename"
+                        android:paddingLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/dropdownbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"/>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:text="  Mobile No."
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:textAlignment="textStart"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:fontFamily="@font/custom_font"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:maxLines="1"
+                        android:maxLength="12"
+                        android:inputType="number"
+                        android:paddingLeft="10dp"
+                        android:id="@+id/emobile"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/dropdownbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="  Select Gender"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:textAlignment="textStart"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:fontFamily="@font/custom_font"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:layout_margin="3dp"
+                        android:background="@drawable/dropdownbox"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp">
+
+                        <Spinner
+                            android:id="@+id/sp_gender"
+                            android:spinnerMode="dropdown"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"/>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="  Address"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:textAlignment="textStart"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:fontFamily="@font/custom_font"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:id="@+id/eadd"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/dropdownbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"/>
+
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:text="  State"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:textAlignment="textStart"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:fontFamily="@font/custom_font"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:layout_margin="3dp"
+                        android:background="@drawable/dropdownbox"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp">
+
+                        <Spinner
+                            android:id="@+id/sp_state"
+                            android:spinnerMode="dropdown"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:text="  City"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:textAlignment="textStart"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:fontFamily="@font/custom_font"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:layout_margin="3dp"
+                        android:background="@drawable/dropdownbox"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp">
+
+                        <Spinner
+                            android:id="@+id/sp_city"
+                            android:spinnerMode="dropdown"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:text="  Email ID"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:textAlignment="textStart"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:fontFamily="@font/custom_font"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:paddingLeft="10dp"
+                        android:id="@+id/email"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/dropdownbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"/>
+
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:text="  Age"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:textAlignment="textStart"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:fontFamily="@font/custom_font"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:paddingLeft="10dp"
+                        android:id="@+id/eage"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/dropdownbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"/>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:text="  Father's name"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:textAlignment="textStart"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:fontFamily="@font/custom_font"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:paddingLeft="10dp"
+                        android:id="@+id/efather"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/dropdownbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"/>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:text="  Mother's name"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:textAlignment="textStart"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:fontFamily="@font/custom_font"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:paddingLeft="10dp"
+                        android:id="@+id/emother"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/dropdownbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"/>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:text="  Husband name"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:textAlignment="textStart"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:fontFamily="@font/custom_font"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:paddingLeft="10dp"
+                        android:id="@+id/ehusband"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/dropdownbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="end"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:text="EDIT"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="10dp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="#fff"
+                        android:fontFamily="@font/custom_font"
+                        android:id="@+id/btedit"
+                        android:background="@drawable/bluebt" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_width="100dp"
+                        android:text="SAVE"
+                        android:id="@+id/btsave"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="10dp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="#fff"
+                        android:fontFamily="@font/custom_font"
+                        android:background="@drawable/bluebt" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>
